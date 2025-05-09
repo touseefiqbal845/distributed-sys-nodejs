@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "nosql",
+    "database": "astra_protocol",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "postgres",
+    "password": "nosql",
+    "database": "astra_protocol",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "production": {
+    "username": "postgres",
+    "password": "your_password",
+    "database": "astra_protocol_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}
