@@ -41,3 +41,47 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+
+
+// if in model nested sub directories
+// const fs = require('fs');
+// const path = require('path');
+// const Sequelize = require('sequelize');
+// const {sequelize} = require('../config/postgres');
+
+// const db = {};
+// const modelsPath = path.join(__dirname, 'postgresDb');
+
+// function loadModels(dir) {
+//   fs.readdirSync(dir).forEach((file) => {
+//     const fullPath = path.join(dir, file);
+//     if (fs.statSync(fullPath).isDirectory()) {
+//       loadModels(fullPath);
+//     } else if (file.endsWith('.js')) {
+//       const modelModule = require(fullPath);
+//       if (typeof modelModule === 'function') {
+//         const model = modelModule(sequelize, Sequelize.DataTypes);
+//         db[model.name] = model;
+//       }
+//     }
+//   });
+// }
+
+
+// // Load all models recursively
+// loadModels(modelsPath);
+
+// // Setup associations if defined
+// Object.keys(db).forEach((modelName) => {
+//   if (db[modelName].associate) {
+//     db[modelName].associate(db);
+//   }
+// });
+
+// // Attach sequelize instance
+// db.sequelize = sequelize;
+// db.Sequelize = Sequelize;
+
+// module.exports = db;
+
